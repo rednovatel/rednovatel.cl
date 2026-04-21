@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visor de Cámaras Rednovatel</title>
+    <style>
+        body { background: #000; color: #fff; font-family: sans-serif; text-align: center; margin: 0; }
+        h1 { padding: 20px; margin: 0; background: #1a1a1a; font-size: 24px; }
+        .mosaico { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; padding: 20px; }
+        iframe { width: 45%; height: 450px; border: 2px solid #333; background: #111; border-radius: 8px; }
+        @media (max-width: 800px) { iframe { width: 95%; height: 300px; } }
+    </style>
+</head>
+<body>
+    <h1>🔴 Monitoreo en Vivo - Rednovatel</h1>
+    <div class="mosaico">
+        <!-- Estos links cargan lo que configuraste en el Túnel de Cloudflare -->
+        <iframe src="https://rednovatel.cl" title="Cámara 1"></iframe>
+        <iframe src="https://rednovatel.cl" title="Cámara 2"></iframe>
+    </div>
+    <p style="color: #666; font-size: 12px; margin-top: 20px;">Acceso Seguro vía Cloudflare Zero Trust</p>
+</body>
+</html>
