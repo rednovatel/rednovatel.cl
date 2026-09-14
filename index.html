@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>REDNOVATEL</title>
+  <title>Grupo REDNOVATEL</title>
 
   <style>
     :root{
@@ -14,13 +14,17 @@
       --texto:#1c2b39;
     }
 
-    *{box-sizing:border-box;margin:0;padding:0}
+    *{
+      box-sizing:border-box;
+      margin:0;
+      padding:0;
+    }
 
     body{
       font-family:Arial,Helvetica,sans-serif;
       color:var(--texto);
       background:#fff;
-      line-height:1.6
+      line-height:1.6;
     }
 
     nav{
@@ -47,53 +51,57 @@
       color:#fff;
       text-decoration:none;
       margin:0 8px;
-      font-weight:bold
+      font-weight:bold;
+    }
+
+    nav a:hover{
+      text-decoration:underline;
     }
 
     header{
       background:linear-gradient(135deg,var(--azul),var(--azul2));
       color:#fff;
       padding:90px 20px;
-      text-align:center
+      text-align:center;
     }
 
     header h1{
       font-size:42px;
       max-width:1100px;
-      margin:0 auto 14px
+      margin:0 auto 14px;
     }
 
     header p{
-      font-size:20px
+      font-size:20px;
     }
 
     .container{
       max-width:1100px;
       margin:auto;
-      padding:50px 20px
+      padding:50px 20px;
     }
 
     .cards{
       display:grid;
       grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
       gap:20px;
-      margin-top:30px
+      margin-top:30px;
     }
 
     .card{
       background:var(--celeste);
       padding:24px;
-      border-radius:14px
+      border-radius:14px;
     }
 
     .card h3{
       color:var(--azul);
-      margin-bottom:10px
+      margin-bottom:10px;
     }
 
     h2{
       color:var(--azul);
-      margin-bottom:12px
+      margin-bottom:12px;
     }
 
     .hik-connect{
@@ -108,11 +116,33 @@
       margin-bottom:10px;
     }
 
-    .hik-connect p{
+    .hik-connect > p{
       margin-bottom:20px;
     }
 
-    .hik-connect a{
+    .extensiones{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:20px;
+      margin-top:25px;
+    }
+
+    .extension{
+      background:#fff;
+      padding:25px;
+      border-radius:12px;
+    }
+
+    .extension h3{
+      color:var(--azul);
+      margin-bottom:10px;
+    }
+
+    .extension p{
+      margin-bottom:20px;
+    }
+
+    .extension a{
       display:inline-block;
       background:var(--azul);
       color:#fff;
@@ -122,8 +152,21 @@
       border-radius:8px;
     }
 
-    .hik-connect a:hover{
+    .extension a:hover{
       background:var(--azul2);
+    }
+
+    .footer-logo{
+      width:50px;
+      height:50px;
+      object-fit:contain;
+      background:#fff;
+      border-radius:50%;
+      padding:3px;
+      margin-bottom:12px;
+      display:block;
+      margin-left:auto;
+      margin-right:auto;
     }
 
     footer{
@@ -131,113 +174,104 @@
       color:#fff;
       text-align:center;
       padding:22px;
-      margin-top:40px
+      margin-top:40px;
     }
-
   </style>
 </head>
 
 <body>
 
-<nav>
-
-  <a href="index.html">
-    <img src="img/imglogo.jpeg.jpeg" class="logo" alt="REDNOVATEL">
-  </a>
-
-  <a href="index.html">Inicio</a>
-  <a href="quienes.html">Quiénes somos</a>
-  <a href="mision.html">Misión</a>
-  <a href="vision.html">Visión</a>
-  <a href="servicios.html">Servicios</a>
-  <a href="equipo.html">Equipo directivo</a>
-  <a href="contacto.html">Contacto</a>
-
-</nav>
-
-
-<header>
-
-  <h1>
-    REDNOVATEL INGENIERÍA SOLUCIONES TECNOLÓGICAS LIMITADA
-  </h1>
-
-  <p>
-    Soluciones en telecomunicaciones, redes y soporte tecnológico
-  </p>
-
-</header>
-
-
-<div class="container">
-
-  <h2>Bienvenido</h2>
-
-  <p>
-    REDNOVATEL desarrolla soluciones técnicas en telecomunicaciones,
-    redes de datos, soporte especializado, automatización y proyectos
-    tecnológicos, con enfoque en calidad, continuidad operativa y
-    compromiso profesional.
-  </p>
-
-
-  <div class="cards">
-
-    <div class="card">
-      <h3>Telecomunicaciones</h3>
-      <p>
-        Diseño, instalación e implementación de infraestructura de conectividad.
-      </p>
-    </div>
-
-
-    <div class="card">
-      <h3>Redes de datos</h3>
-      <p>
-        Configuración, mantenimiento y soporte para redes críticas y operativas.
-      </p>
-    </div>
-
-
-    <div class="card">
-      <h3>Soporte técnico</h3>
-      <p>
-        Respuesta técnica, mantenimiento preventivo y continuidad de servicio.
-      </p>
-    </div>
-
-  </div>
-
-
-  <!-- ACCESO A HIK-CONNECT.CL -->
-
-  <div class="hik-connect">
-
-    <h2>Hik-Connect.cl</h2>
-
-    <p>
-      Sitio especializado exclusivamente en la instalación de
-      <strong>enlaces de microondas</strong>.
-    </p>
-
-    <a href="https://hik-connect.cl"
-       target="_blank"
-       rel="noopener noreferrer">
-      Visitar Hik-Connect.cl
+  <!-- MENÚ PRINCIPAL -->
+  <nav>
+    <a href="index.html">
+      <img src="img/imglogo.jpeg.jpeg" class="logo" alt="REDNOVATEL">
     </a>
 
+    <a href="index.html">Inicio</a>
+    <a href="quienes.html">Quiénes somos</a>
+    <a href="mision.html">Misión</a>
+    <a href="vision.html">Visión</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="equipo.html">Equipo directivo</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="#brazos-extendidos">Brazos extendidos</a>
+  </nav>
+
+  <!-- ENCABEZADO PRINCIPAL -->
+  <header>
+    <h1>GRUPO REDNOVATEL</h1>
+    <p>Ingeniería, telecomunicaciones, energía, redes y soporte tecnológico</p>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <div class="container">
+    <h2>Bienvenido</h2>
+    <p>
+      REDNOVATEL desarrolla soluciones técnicas en telecomunicaciones,
+      redes de datos, soporte especializado, automatización y proyectos
+      tecnológicos, con enfoque en calidad, continuidad operativa y
+      compromiso profesional.
+    </p>
+
+    <!-- SERVICIOS PRINCIPALES -->
+    <div class="cards">
+      <div class="card">
+        <h3>Telecomunicaciones</h3>
+        <p>Diseño, instalación e implementación de infraestructura de conectividad.</p>
+      </div>
+
+      <div class="card">
+        <h3>Redes de datos</h3>
+        <p>Configuración, mantenimiento y soporte para redes críticas y operativas.</p>
+      </div>
+
+      <div class="card">
+        <h3>Soporte técnico</h3>
+        <p>Respuesta técnica, mantenimiento preventivo y continuidad de servicio.</p>
+      </div>
+    </div>
+
+    <!-- BRAZOS EXTENDIDOS -->
+    <section id="brazos-extendidos" class="hik-connect">
+      <h2>Brazos extendidos</h2>
+      <p>Grupo REDNOVATEL presenta sus nuevas extensiones especializadas.</p>
+
+      <div class="extensiones">
+        <!-- HIK-CONNECT.CL -->
+        <div class="extension">
+          <h3>HIK-CONNECT.CL</h3>
+          <p>
+            Nueva extensión especializada exclusivamente en la instalación,
+            configuración y mantenimiento de <strong>enlaces de microondas</strong>.
+          </p>
+          <a href="https://hik-connect.cl/" target="_blank" rel="noopener noreferrer">
+            Visitar HIK-CONNECT.CL
+          </a>
+        </div>
+
+        <!-- V&V INGENIERÍA Y ENERGÍA -->
+        <div class="extension">
+          <h3>V&amp;V Ingeniería y Energía</h3>
+          <p>
+            Valenzuela &amp; Vásquez Ingeniería y Energía Ltda.,
+            empresa vinculada al Grupo REDNOVATEL, especializada en
+            <strong>ingeniería eléctrica, energía, infraestructura y proyectos industriales</strong>.
+          </p>
+          <a href="https://vyv-energia.cl/" target="_blank" rel="noopener noreferrer">
+            Visitar V&amp;V Ingeniería y Energía
+          </a>
+        </div>
+      </div>
+    </section>
   </div>
 
-</div>
-
-
-<footer>
-
-© 2026 REDNOVATEL INGENIERÍA SOLUCIONES TECNOLÓGICAS LIMITADA
-
-</footer>
-
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <img src="img/imglogo.jpeg.jpeg" class="footer-logo" alt="REDNOVATEL">
+    © 2026 REDNOVATEL INGENIERÍA SOLUCIONES TECNOLÓGICAS LIMITADA
+    <br>
+    Grupo REDNOVATEL · HIK-CONNECT.CL · V&amp;V INGENIERÍA Y ENERGÍA
+  </footer>
 
 </body>
 </html>
-```
